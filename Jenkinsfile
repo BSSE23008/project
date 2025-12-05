@@ -37,7 +37,7 @@ pipeline {
                     sh 'mv kubectl /usr/local/bin/'
                     
                     // 2. Apply the manifest
-                    sh 'kubectl apply -f kubernetes/deployment.yaml'
+                    sh 'kubectl apply -f kubernetes/deployment.yml'
                     
                     // 3. Restart rollout to ensure latest image is used
                     sh 'kubectl rollout restart deployment/devops-exam-deploy'
