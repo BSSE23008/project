@@ -14,18 +14,18 @@ HTML_TEMPLATE = """
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>DevOps Mission Control</title>
    <style>
-      :root { --primary: #00ff88; --bg: #0f172a; --card: #1e293b; --text: #e2e8f0; }
+      :root { --primary: #6366f1; --bg: #0f172a; --card: #1e293b; --text: #e2e8f0; }
       body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; }
       .container { text-align: center; max-width: 600px; padding: 20px; }
       .card { background: var(--card); padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid #334155; }
       h1 { font-size: 2.5rem; margin-bottom: 10px; color: #fff; }
-      .status-badge { display: inline-block; background: rgba(0, 255, 136, 0.1); color: var(--primary); padding: 8px 16px; border-radius: 50px; font-weight: bold; border: 1px solid var(--primary); margin-bottom: 20px; }
+      .status-badge { display: inline-block; background: rgba(99, 102, 241, 0.1); color: var(--primary); padding: 8px 16px; border-radius: 50px; font-weight: bold; border: 1px solid var(--primary); margin-bottom: 20px; }
       .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 30px; }
       .stat { background: #0f172a; padding: 15px; border-radius: 12px; }
       .stat h3 { margin: 0; color: #94a3b8; font-size: 0.9rem; }
       .stat p { margin: 5px 0 0; font-size: 1.2rem; font-weight: bold; }
       .pulse { width: 10px; height: 10px; background: var(--primary); border-radius: 50%; display: inline-block; margin-right: 8px; animation: pulse 2s infinite; }
-      @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(0, 255, 136, 0.7); } 70% { box-shadow: 0 0 0 10px rgba(0, 255, 136, 0); } 100% { box-shadow: 0 0 0 0 rgba(0, 255, 136, 0); } }
+      @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.7); } 70% { box-shadow: 0 0 0 10px rgba(99, 102, 241, 0); } 100% { box-shadow: 0 0 0 0 rgba(99, 102, 241, 0); } }
    </style>
 </head>
 <body>
@@ -33,7 +33,7 @@ HTML_TEMPLATE = """
       <div class="card">
          <div class="status-badge"><span class="pulse"></span>SYSTEM OPERATIONAL</div>
          <h1>DevOps Exam Target</h1>
-         <p>Phase 4 Deployment Successful. The pipeline is fully functional.</p>
+         <p>Phase 4 Deployment Updated. The pipeline is fully functional.</p>
          
          <div class="grid">
                <div class="stat">
